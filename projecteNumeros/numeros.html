@@ -9,7 +9,7 @@
 <body>
     <script>
 
-        var numeros = new Array(500000);
+        var numeros = new Array(700000);
         var numeroAtrobar = Math.floor(Math.random() * (5000 - 1) + 1);
 
 
@@ -17,7 +17,7 @@
             numeros[i] = Math.floor(Math.random() * (5000 - 1) + 1);
         }
 
-        for (var i = 0; i < numeros.length; i++) {
+        for (var i = 0; i < numeros.length; i+=2) {
             if (numeroAtrobar == numeros[i]) {
                 alert("S'ha trobat el número " + numeroAtrobar);
                 break;
